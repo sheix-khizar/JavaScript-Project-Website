@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Projects Overview -->
+    <section class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
+            <%= title %>
+        </h2>
+
+        <!-- Grid to display all projects -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <% for (const projectName in projects) { const project=projects[projectName]; %>
+                <div
+                    class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 border border-gray-300 hover:border-gray-400">
+
+                    <!-- Wrap the image in an anchor tag to make it clickable -->
+                    <a href="/projects/<%= projectName %>" class="block">
+                        <img src="<%= project.image %>" alt="<%= project.title %>"
+                            class="w-full h-48 object-cover rounded-md transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer">
+                    </a>
+
+                    <!-- Wrap the title in an anchor tag to make it clickable -->
+                    <a href="/projects/<%= projectName %>"
+                        class="block mt-4 text-lg font-semibold text-gray-800 hover:underline cursor-pointer">
+                        <%= project.title %>
+                    </a>
+
+                    <p class="text-gray-600 mt-2">
+                        <%= project.description %>
+                    </p>
+
+                    <a href="/projects/<%= projectName %>"
+                        class="mt-4 inline-block text-black transition underline duration-300">Project
+                        Details</a>
+                </div>
+                <% } %>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

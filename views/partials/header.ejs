@@ -1,0 +1,58 @@
+<!-- Navbar -->
+<nav class="bg-white shadow-md py-4 border-b border-gray-300 relative z-50">
+  <div class="container mx-auto flex justify-between items-center px-6">
+    <!-- Logo -->
+    <a href="/" class="flex items-center">
+      <i class="logo fab fa-js-square text-5xl text-blue-600 mr-2"></i>
+      <span class="logo text-xl font-extrabold text-blue-600 tracking-wide">
+        JavaScript <br class="hidden sm:block"> Projects
+      </span>
+    </a>
+
+    <!-- Hamburger Button -->
+    <button id="menu-toggle" class="md:hidden text-blue-600 text-3xl focus:outline-none z-50">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex space-x-8 items-center">
+      <li>
+        <button id="dark-mode-toggle" class="rounded-full focus:outline-none">
+          <span class="dark-mode-icon text-blue-600 hover:text-gray-800 transition-all duration-300">
+            <i class="fas fa-moon"></i>
+          </span>
+        </button>
+      </li>
+      <li><a href="/" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">Home</a></li>
+      <li><a href="/projects" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">Projects</a></li>
+      <li><a href="/about" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">About</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Nav Menu (50% width) -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-1/2 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+    <ul class="flex flex-col mt-20 space-y-6 px-6">
+      <li>
+        <button id="dark-mode-toggle-mobile" class="rounded-full focus:outline-none">
+          <span class="dark-mode-icon text-blue-600 hover:text-gray-800 transition-all duration-300">
+            <i class="fas fa-moon"></i>
+          </span>
+        </button>
+      </li>
+      <li><a href="/" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">Home</a></li>
+      <li><a href="/projects" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">Projects</a></li>
+      <li><a href="/about" class="text-blue-600 hover:text-blue-900 font-bold transition-all duration-300">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Script -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('translate-x-full');
+    mobileMenu.classList.toggle('translate-x-0');
+  });
+</script>
