@@ -88,7 +88,7 @@ npm start
 ### 4. Visit the app in your browser
 
 ```bash
-[npm start](http://localhost:3000)
+http://localhost:3000
 ```
 
 
