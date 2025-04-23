@@ -16,8 +16,9 @@ The **JavaScript Projects Website** is designed to be simple, modular, and begin
 - 🧩 30+ interactive JavaScript projects
 - 📂 Organized folder-based structure
 - ⚡ Built with Node.js and Express.js
-- 🌐 No database or backend logic required
+- 🌐 No database required – projects are stored in an array
 - 🎨 Clean, mobile-responsive UI
+- 🌙 Dark mode with a toggle button for seamless switching
 - 📚 Easy to extend with new projects
 
 ---
