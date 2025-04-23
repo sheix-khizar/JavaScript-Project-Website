@@ -10,11 +10,6 @@ The **JavaScript Projects Website** is designed to be simple, modular, and begin
 
 ---
 
-## 🖼️ Screenshot
-
-> _(Add a screenshot of your website UI here)_
-
----
 
 ## 🚀 Features
 
