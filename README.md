@@ -62,30 +62,4 @@ javascript-projects-website/
 
 
 
-📦 Installation
-Follow these steps to get the project up and running on your local machine:
-
-1. Clone the repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/javascript-projects-website.git
-cd javascript-projects-website
-2. Install dependencies
-bash
-Copy
-Edit
-npm install
-3. Run the server
-bash
-Copy
-Edit
-npm start
-4. Visit the app in your browser
-Open your browser and go to:
-
-arduino
-Copy
-Edit
-http://localhost:3000
 
