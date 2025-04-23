@@ -29,7 +29,7 @@ The **JavaScript Projects Website** is designed to be simple, modular, and begin
 | Server        | Node.js, Express.js |
 | Frontend      | HTML, CSS, JavaScript, Tailwind CSS |
 | View Engine   | EJS (Embedded JavaScript Templates) |
-| Hosting (Optional) | Vercel, Render, Netlify, etc. |
+| Hosting  | Glitch.com |
 
 ---
 
@@ -61,5 +61,34 @@ javascript-projects-website/
 └── README.md
 
 
+```
+## 📦 Installation
+
+Follow these steps to get the project up and running on your local machine:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sheix-khizar/JavaScript-Project-Website.git
+cd javascript-projects-website
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the server
+
+```bash
+npm start
+```
+
+### 4. Visit the app in your browser
+
+```bash
+[npm start](http://localhost:3000)
+```
 
 
