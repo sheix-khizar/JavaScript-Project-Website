@@ -10,7 +10,6 @@ The **JavaScript Projects Website** is designed to be simple, modular, and begin
 
 ---
 
-
 ## 🚀 Features
 
 - 🧩 30+ interactive JavaScript projects
